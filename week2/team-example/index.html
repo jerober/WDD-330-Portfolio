@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Teach</title>
+
+    <script>
+        function display(){
+            const number1 = document.getElementById("numberInput1").value
+            const number2 = document.getElementById("numberInput2").value
+            const number3 = document.getElementById("numberInput3").value
+            const addition = Number(number1) + Number(number2) + Number(number3)
+            document.getElementById("display").innerHTML = addition
+        }
+    </script>
+</head>
+<body>
+    <input type="number" id="numberInput1">
+    <input type="number" id="numberInput2">
+    <input type="number" id="numberInput3">
+    <button onclick="display()">Add</button>
+    <div id="display"></div>
+</body>
+</html>
+
