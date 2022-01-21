@@ -9,19 +9,22 @@
 <body>
     <h1>WDD Portfolio</h1>
     <h2>Week Three Notes</h2>
-    <p>Var is no longer best practice to use to define a variable. Instead we use const and let. Both can be defined globally and locally depending on if they are in a block or not.If a variable is defined inside a block without the use of let or const than it is a global variable. JS variables follow the camel case syntax. Less than or equal to operators are soft in JS, menaing they use type coersions to make data types the same. E.g. 8 = '8' a number to a string </p>
-    <p>Need to go back over function hoisting...</p>
+    <p>'this.' works for objects. The this. keyword takes an assumed value. When used in an arrow function it takes the outer context to populate. The context also stays consistent using the nested functions within an arrow function. In an event listener, the this keyword takes the event that is being listened to as context. If you want there to be a different context referenced like in a nested function, the bind() methood needs to be used. The first parameter passed into the bind method is what the this keyword references. Bind doesn't work with the arrow function syntax.</p>
+    <p>Objects are created with curly braces. Then to access an entry in the object nameOfObject.nameOfEntry. Can also use bracket notation. You can concat entries in bracket notation. Calling a method is the same notation as a function. The 'in' or hasOwnProperty() operator is used to check for existance in methods. Objects can be nested within each other</p>
+    <p>Name spacing is when objects within the same scope have the same name. Can creating a namespacing pattern to make naming dynamic.</p>
+    <p>JSON seems like an array of objects, and although the code doesn't read like that, the concept is similar. JSON had parse() and stringify() to translate data from JSON to a JS object and back.</p>
+    <p>RegExp are used for looking for patterns. There are a lot of nuances. Probably best to memorize a few and then google the rest when needed, the syntax is consistent across all regexp formats, but it is a bit complicated. **Memorize how the syntax works. There are also some shorthand like for greedy and lazy modifiers.</p>
     <h2>Week Three Questions</h2>
     <ul>
-        <li>Why do truthy and falsey values exist different in JS than most languages?</li>
-        <li>When do I use a soft equality operator over a hard equality operator?</li>
-        <li>Why would a set be of better use than an array? It seems limiting...</li>
-        <li>What are the benefits of the weak sets and maps?</li>
+        <li>How come this. works so differently in the different function syntaxes?</li>
+        <li>What does speakLeet mean? I think it is the name of the example and not a JS keyword.</li>
+        <li>Can nested objects inherit things from their parent as used in OOP?</li>
+        <li>Does Math need to be imported like in Python or is it assumed in some other way?</li>
         <li></li>
     </ul>
     <h2>Week Three Code Example</h2>
     <h3><a href="/week3/code-example/index.html">Code Snippet</a></h3>
     <h2>Week Three Team Example</h2>
-    <h3><a href="/week3/team-example/array-cardio/index.html">Team Code</a></h3>
+    <h3><a href="/week3/team-example/array-cardio/finished.html">Team Code</a></h3>
 </body>
 </html>
